@@ -4,7 +4,9 @@ function DetailPage({ info }) {
   return (
     <div className="detail-container">
         <h2>{info.title}</h2>
-        <img src={info.url} alt={info.title}/>
+        <div className="img-container">
+          <img src={info.url} alt={info.title}/>
+        </div>
         <p>{info.date}</p>
         <p>{info.explanation}</p>
 

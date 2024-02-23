@@ -55,6 +55,12 @@ header h1 {
 
 } */
 
+@media (max-width: 400px) {
+    .img-container img {
+        max-width: 300px;
+    }
+}
+
 @media (min-width: 800px){
     body {
         background-color: rgb(24, 167, 172);
