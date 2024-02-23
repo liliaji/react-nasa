@@ -36,6 +36,16 @@ header h1 {
     text-align: center;
 }
 
+.img-container {
+    overflow: hidden;
+}
+
+.img-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
 /* img {max-width: 50%;
     display: flex;
     flex-direction: row;

@@ -8,7 +8,6 @@ function App() {
   
   const [data, setData] = useState([]);
   const [selectedData, setSelectedData] = useState({})
-  // const [modal, setModal] = useState(false)
   
   const getData = () => {
     const url = "https://api.nasa.gov/planetary/apod";
@@ -22,14 +21,7 @@ function App() {
 
   useEffect(() => {
     getData();
-    // console.log(data[0].date);
   }, []);
-
-  // const openModal = () => {
-  //   setModal(true)
-  //   setData()
-  // }
-
   
   return (
     <div className="App">
@@ -40,14 +32,6 @@ function App() {
         <Route path="/" element={<Main data={data} setSelectedData={setSelectedData}/>} />
         <Route path="/details" element={<DetailPage info={selectedData}/>} />
       </Routes>
-      
-
-      {/* <DetailModal info={info} /> */}
-
-{/* <Routes>
-<    Route path="/details/" element={DetailPage}/>
-  </Routes> */}
-
     </div>
   );
 }
